@@ -1,0 +1,20 @@
+{
+	"name": "hhun/web3-recover",
+	"description": "Web3还原已签名数据的签名帐户",
+	"keywords": ["web3", "recover"],
+	"license": "MIT",
+	"authors": [{
+		"name": "Hhun",
+		"homepage": "https://gitee.com/hhun/web3-recover"
+	}],
+	"require": {
+		"php": ">=7.1.0",
+		"kornrunner/keccak": "^1.0",
+		"ext-gmp": "*"
+	},
+    "autoload": {
+        "psr-4": {
+            "hhun\\Web3Recover\\": "src"
+        }
+    }  
+}
