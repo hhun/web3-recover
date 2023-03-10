@@ -1,36 +1,31 @@
-# Web3Recover
+# Signing account for web3 recover signed data
 
-#### Description
-Web3还原已签名数据的签名帐户
+[中文](README.md) | **English**
 
-#### Software Architecture
-Software architecture description
+## Installation
 
-#### Installation
+### JavaScript Signed Message
+``` JavaScript
+var msg = 'login'
+var from = web3.eth.accounts[0]
+web3.eth.sign(msg, from, function (err, result) {
+	if (err) {
+		return console.error(err);
+	}
+	console.log('signed: ' + result);
+});
+```
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+### PHP Recover Signature Account
 
-#### Instructions
+``` php
+use hhun\Web3Recover\Web3Recover;
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+$signed = '0x4cde93d4........'; // 签名内容
 
-#### Contribution
+$msg = 'login';
+echo Web3Recover::fromText($msg, $signed);
 
-1.  Fork the repository
-2.  Create Feat_xxx branch
-3.  Commit your code
-4.  Create Pull Request
-
-
-#### Gitee Feature
-
-1.  You can use Readme\_XXX.md to support different languages, such as Readme\_en.md, Readme\_zh.md
-2.  Gitee blog [blog.gitee.com](https://blog.gitee.com)
-3.  Explore open source project [https://gitee.com/explore](https://gitee.com/explore)
-4.  The most valuable open source project [GVP](https://gitee.com/gvp)
-5.  The manual of Gitee [https://gitee.com/help](https://gitee.com/help)
-6.  The most popular members  [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+$hex = '0x6c6f67696e';
+echo Web3Recover::fromHex($hex, $signed);
+```
