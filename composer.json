@@ -5,7 +5,7 @@
 	"license": "MIT",
 	"authors": [{
 		"name": "Hhun",
-		"homepage": "https://gitee.com/hhun/web3-recover"
+		"homepage": "https://github.com/hhun/web3-recover"
 	}],
 	"require": {
 		"php": ">=7.1.0",
