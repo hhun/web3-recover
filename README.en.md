@@ -1,4 +1,4 @@
-# Signing account for web3 recover signed data
+# Recover signing account for Web3 signed messages
 
 [中文](README.md) | **English**
 

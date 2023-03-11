@@ -41,7 +41,7 @@ class Web3Recover
                 $personal_prefix_msg = "\x19Ethereum Signed Message:\n" . strlen($msg) . $msg;
                 break;
             case 'EIP712':
-                $personal_prefix_msg = hex2bin(substr(Web3Recover::keccak256('string Messageuint32 A number'), 2) . substr(Web3Recover::keccak256('Hi, Alice!' . pack('N', 1337)), 2));
+                $personal_prefix_msg = hex2bin(substr(self::keccak256('string Messageuint32 A number'), 2) . substr(self::keccak256('Hi, Alice!' . pack('N', 1337)), 2));
                 break;
             default:
                 return '';

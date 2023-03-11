@@ -1,6 +1,6 @@
 {
 	"name": "hhun/web3-recover",
-	"description": "Web3还原已签名数据的签名帐户",
+	"description": "还原Web3签名消息的签名帐户",
 	"keywords": ["web3", "recover"],
 	"license": "MIT",
 	"authors": [{

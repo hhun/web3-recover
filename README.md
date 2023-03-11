@@ -1,4 +1,4 @@
-# Web3还原已签名数据的签名帐户
+# 还原Web3签名消息的签名帐户
 
 **中文** | [English](README.en.md)
 
@@ -17,6 +17,7 @@ web3.eth.sign(msg, from, function (err, result) {
 ```
 
 ## PHP恢复签名地址
+
 ``` php
 use hhun\Web3Recover\Web3Recover;
 
