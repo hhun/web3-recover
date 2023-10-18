@@ -11,7 +11,7 @@ class Web3Recover
     }
 
     /**
-     * fromText
+     * fromHex
      *
      * @param $hex
      * @param $signed
